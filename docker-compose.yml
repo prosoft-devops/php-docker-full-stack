@@ -14,7 +14,7 @@ services:
     volumes:
       - "./:/var/www/html" # sync the current dir on local machine to the dir of container
     ports:
-      - 8000:80
+      - 80:80
   phpmyadmin:
     image: phpmyadmin/phpmyadmin
     ports:
