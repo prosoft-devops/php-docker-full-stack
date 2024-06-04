@@ -14,7 +14,7 @@ services:
     volumes:
       - "./:/var/www/html" # sync the current dir on local machine to the dir of container
     ports:
-      - 8005:8005
+      - 8005:80
       - 443:443 # for future ssl traffic
   phpmyadmin:
     image: phpmyadmin/phpmyadmin
