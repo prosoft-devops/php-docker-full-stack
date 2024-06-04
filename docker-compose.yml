@@ -13,11 +13,8 @@ services:
     image: php:apache
     volumes:
       - "./:/var/www/html" # sync the current dir on local machine to the dir of container
-      - "./apache.conf:/etc/apache2/sites-available/000-default.conf"
     ports:
       - 8005:80
-      - 443:443 # for future ssl traffic
-    command: ["apache2-foreground"]
   phpmyadmin:
     image: phpmyadmin/phpmyadmin
     ports:
